@@ -13,7 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// for check all data row
 Route::get('/', 'getApi@index');
+
+// for data processing
 Route::group(['prefix' => 'api'], function () use($router){
     $router->get('cities', 'CitiesController@index');
 });
