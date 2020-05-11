@@ -31,17 +31,22 @@
                         <th class="text-center">Kode Pos</th>
                     </tr>
                 </thead>
-                <tbody>
-                    <?php $i = 1; ?>
-                    @foreach($cities as $city)
-                    <tr>
-                        <td class="text-center">{{$loop->iteration}}</td>
-                        <td>{{$city['city_name']}}</td>
-                        <td>{{$city['type']}}</td>
-                        <td>{{$city['province']}}</td>
-                        <td class="text-center">{{$city['postal_code']}}</td>
-                    </tr>
-                    @endforeach
+               <tbody>
+                    <?php
+                    $i = 1;
+                    foreach ($cities as $city) :
+                    ?>
+                        <tr>
+                            <td class="text-center"><?= $i; ?></td>
+                            <td><?= $city['city_name']; ?></td>
+                            <td><?= $city['type'];   ?></td>
+                            <td><?= $city['province'];   ?></td>
+                            <td class="text-center"><?= $city['postal_code'];   ?></td>
+                        </tr>
+                    <?php
+                        $i++;
+                    endforeach;
+                    ?>
                 </tbody>
             </table>
         </div>
