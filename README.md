@@ -3,10 +3,7 @@ Task #1 and Task #2
 
 # Task 1
 ``` php
-// random array int 
 $arr = [5, 5, 1, 6, 4, 3];
-
-// desc sort array's element 
 rsort($arr);
 
 // get second largest element
@@ -17,7 +14,7 @@ foreach ($arr as $val) {
         break;
     }
 }
-print("second largest number is ".$large_2);
+print("output: ".$large_2);
 ```
 
 # Task 2 = Get API RajaOngkir for Laravel
