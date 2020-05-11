@@ -4,7 +4,7 @@ Task #1 and Task #2
 # Task 1
 ``` php
 // random array int 
-$arr = [12, 3, 70, 40, -2, 0, 100, 101, 100];
+$arr = [5, 5, 1, 6, 4, 3];
 
 // desc sort array's element 
 rsort($arr);
