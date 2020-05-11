@@ -1,5 +1,5 @@
-@extends('templates/base')
-@section('container')
+
+<?php $__env->startSection('container'); ?>
 
 <header class="header_area white-header">
     <div class="main_menu">
@@ -52,4 +52,5 @@
         </div>
     </div>
 </div>
-@endsection
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('templates/base', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH C:\xampp\htdocs\dot\apiRajaOngkir\resources\views/cities.blade.php ENDPATH**/ ?>

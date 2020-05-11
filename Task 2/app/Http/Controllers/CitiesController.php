@@ -20,7 +20,7 @@ class CitiesController extends Controller
         
         $cities = [];
 
-        // if url get is exsist -> 'cari'
+        // jika get url ada nilai parameter 'cari'
         if ($request->has('cari')) {
             $cari= strtolower($request->cari);
             $data = $response['rajaongkir']['results'];
@@ -52,7 +52,7 @@ class CitiesController extends Controller
                     array_push($cities, $temp);
                 }
             }
-        // if url get is not exsist
+        // tanpa get url 'cari'
         } else {
             $cities = $response['rajaongkir']['results'];
         }
