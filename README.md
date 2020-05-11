@@ -4,17 +4,11 @@ Task #1 and Task #2
 # Task 1
 ``` php
 $arr = [5, 5, 1, 6, 4, 3];
-rsort($arr);
 
-// get second largest element
-$large_2 = 0;
-foreach ($arr as $val) {
-    if ($arr[0] > $val) {
-        $large_2 = $val;
-        break;
-    }
-}
-print("output: ".$large_2);
+$num = array_diff($arr, [max($arr)]);
+$num = max($num);
+
+print("output: ".$num);
 ```
 
 # Task 2 = Get API RajaOngkir for Laravel
