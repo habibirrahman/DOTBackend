@@ -23,7 +23,7 @@ print("second largest number is ".$large_2);
 # Task 2 = Get API RajaOngkir for Laravel
 
 **instalation**
--> app/Http/Controller/CitiesCOntroller.php
+-> app/Http/Controller/CitiesController.php
 ```php
 $response = Http::withHeaders([
             'key' => 'fill_with_api_key'
