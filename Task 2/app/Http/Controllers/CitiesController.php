@@ -42,6 +42,14 @@ class CitiesController extends Controller
                     $temp['city_name'] = $d['city_name'];
                     $temp['postal_code'] = $d['postal_code'];
                     array_push($cities, $temp);
+                } elseif (strpos(strtolower($d['postal_code']), $cari) !== false) {
+                    $temp['city_id'] = $d['city_id'];
+                    $temp['province_id'] = $d['province_id'];
+                    $temp['province'] = $d['province'];
+                    $temp['type'] = $d['type'];
+                    $temp['city_name'] = $d['city_name'];
+                    $temp['postal_code'] = $d['postal_code'];
+                    array_push($cities, $temp);
                 }
             }
         // if url get is not exsist
