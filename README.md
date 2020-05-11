@@ -70,7 +70,7 @@ public function index(Request $request)
             }
         }
         
-    // no selection - all data
+    // no selection => all data
     } else {
         $cities = $response['rajaongkir']['results'];
     }
